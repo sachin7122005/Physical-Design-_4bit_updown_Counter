@@ -69,29 +69,53 @@ Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 
 • add slow.lib with a label Slow or any identifier of your own.
 
+<img width="1919" height="1079" alt="Screenshot 2025-11-22 161935" src="https://github.com/user-attachments/assets/f79a5f0b-70f7-4eb6-b49d-bbf09da32488" />
+
+
 ### Fig.1 Add slow Library set
 
 • add fast.lib with a label Fast or any identifier of your own.
+
+<img width="1918" height="1078" alt="Screenshot 2025-11-22 162031" src="https://github.com/user-attachments/assets/36da8bf9-f76d-41c5-aac4-52870a109424" />
+
 
 ### Fig.2 Add fast Library set
 
 • Adding RC Corners can also be done in a similar process. The temperature value can be found under the corresponding liberty file. Also, cap table and RC Tech files can be added from Foundry where available.
 
+<img width="1917" height="1077" alt="Screenshot 2025-11-22 162158" src="https://github.com/user-attachments/assets/15e22ddd-3d33-45d8-baa9-2676bda8da33" />
+
+
 ### Fig.3 Add RC corner
 
 • Delay Corners are formed by combining Library Sets with RC Corners.
+
+<img width="1917" height="1075" alt="Screenshot 2025-11-22 162226" src="https://github.com/user-attachments/assets/1b6d19e2-29dc-4c45-916c-8f8ea0893951" />
+
+<img width="1918" height="1079" alt="Screenshot 2025-11-22 162235" src="https://github.com/user-attachments/assets/d4cecfc7-bb92-4a8b-9e8d-9f289d965ecd" />
+
 
 ### Fig.4 Add Delay corner Max_delay & Min_delay
 
 • Similarly, SDC can be read under the MMMC Object of “Constraints”.
 
+
+<img width="1915" height="1075" alt="Screenshot 2025-11-22 162321" src="https://github.com/user-attachments/assets/2226e283-6074-4e4c-86d8-a676c39805a7" />
+
+
 ### Fig.5 SDC Constraint file
 
 • Analysis Views are formed from combinations of SDC and Delay Corner.
 
+<img width="1915" height="1079" alt="Screenshot 2025-11-22 162335" src="https://github.com/user-attachments/assets/a3fd3e4d-e8ac-4714-9700-1859100c947d" />
+
+
 ### Fig.6 Add Analysis View Worstcase & Bestcase
 
 • Once “Best” and “Worst” Analysis views are created, assign them to Setup and Hold.
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-22 162350" src="https://github.com/user-attachments/assets/ba0053a2-ba84-4e7a-9089-e749061c12bc" />
+
 
 ### Fig.7 Add Setup Analysis View & Hold Analysis View
 
@@ -106,6 +130,9 @@ Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 In the Import Design window click the save option to save the Default.globals file
 
 • A rectangular or square box appears in your GUI if and only if all the inputs are read properly.
+
+![Untitled Project (3)](https://github.com/user-attachments/assets/99ecd246-5f9e-4620-a8b6-5084b4ef02c7)
+
 
 ### Fig.8 Core area
 
@@ -126,6 +153,10 @@ In the Import Design window click the save option to save the Default.globals fi
 3. Channel Spacing between Core Boundary to IO Boundary
  
 • Select Floorplan → Specify Floorplan to modify/add concerned values to the above Factors. On adding/modifying the concerned values, the core area is also modified.
+
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-22 162504" src="https://github.com/user-attachments/assets/ae4d1eea-8687-4c81-b9c1-682a9b28ade3" />
+
 
 ### Fig.9 Specify Floorplan 
 
@@ -171,6 +202,10 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
 
+
+![Untitled Project](https://github.com/user-attachments/assets/67b583a3-a74e-413d-8c8c-ceaba5fff0f8)
+
+
 ### Fig.10 Power plan 
 
 The complete Power Planning process makes sure Every Standard Cell receives enough power to operate smoothly.
@@ -182,6 +217,12 @@ The complete Power Planning process makes sure Every Standard Cell receives enou
 2. Select Place → Place Standard Cell → Run Full Placement → Mode → Enable ‘Place I/O Pins’ → OK → OK .
    
 • All the Standard Cells and Pins are placed as per the communication between them, i.e., Two communicating Cells are placed as close as possible so that shorter Net lengths can be used for connections as Shorter Net Lengths enable Better Timing Results.
+
+![Untitled Project (4)](https://github.com/user-attachments/assets/be71830a-b41c-47ed-b156-7155c73eb271)
+
+![Untitled Project (1)](https://github.com/user-attachments/assets/0d26f237-78ca-4b46-be09-60a399edcee1)
+
+
 
 ### Fig.11 Placement of standard Cells 
 
